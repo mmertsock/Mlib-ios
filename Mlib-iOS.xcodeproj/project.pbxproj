@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		274623F31637859F00180568 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274623F21637859F00180568 /* Foundation.framework */; };
 		274623F81637859F00180568 /* Mlib_iOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 274623F71637859F00180568 /* Mlib_iOS.h */; };
-		274623FA1637859F00180568 /* Mlib_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 274623F91637859F00180568 /* Mlib_iOS.m */; };
 		27462402163785A000180568 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27462401163785A000180568 /* SenTestingKit.framework */; };
 		27462404163785A000180568 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27462403163785A000180568 /* UIKit.framework */; };
 		27462405163785A000180568 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274623F21637859F00180568 /* Foundation.framework */; };
 		27462408163785A000180568 /* libMlib-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274623EF1637859F00180568 /* libMlib-iOS.a */; };
 		2746240E163785A000180568 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2746240C163785A000180568 /* InfoPlist.strings */; };
-		27462411163785A000180568 /* Mlib_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27462410163785A000180568 /* Mlib_iOSTests.m */; };
+		2746241C163786B200180568 /* MMIsEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2746241B163786B200180568 /* MMIsEmpty.m */; };
+		2746241D163786B200180568 /* MMIsEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2746241B163786B200180568 /* MMIsEmpty.m */; };
+		274624201637874200180568 /* MMIsEmptyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2746241F1637874200180568 /* MMIsEmptyTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,14 +47,15 @@
 		274623F21637859F00180568 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		274623F61637859F00180568 /* Mlib-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mlib-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		274623F71637859F00180568 /* Mlib_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mlib_iOS.h; sourceTree = "<group>"; };
-		274623F91637859F00180568 /* Mlib_iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mlib_iOS.m; sourceTree = "<group>"; };
 		27462400163785A000180568 /* Mlib-iOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mlib-iOSTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27462401163785A000180568 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		27462403163785A000180568 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		2746240B163785A000180568 /* Mlib-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mlib-iOSTests-Info.plist"; sourceTree = "<group>"; };
 		2746240D163785A000180568 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2746240F163785A000180568 /* Mlib_iOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mlib_iOSTests.h; sourceTree = "<group>"; };
-		27462410163785A000180568 /* Mlib_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mlib_iOSTests.m; sourceTree = "<group>"; };
+		2746241A163786B200180568 /* MMIsEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMIsEmpty.h; sourceTree = "<group>"; };
+		2746241B163786B200180568 /* MMIsEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMIsEmpty.m; sourceTree = "<group>"; };
+		2746241E1637874200180568 /* MMIsEmptyTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMIsEmptyTests.h; sourceTree = "<group>"; };
+		2746241F1637874200180568 /* MMIsEmptyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMIsEmptyTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				274623F71637859F00180568 /* Mlib_iOS.h */,
-				274623F91637859F00180568 /* Mlib_iOS.m */,
 				274623F51637859F00180568 /* Supporting Files */,
+				2746241A163786B200180568 /* MMIsEmpty.h */,
+				2746241B163786B200180568 /* MMIsEmpty.m */,
 			);
 			path = "Mlib-iOS";
 			sourceTree = "<group>";
@@ -129,9 +132,9 @@
 		27462409163785A000180568 /* Mlib-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				2746240F163785A000180568 /* Mlib_iOSTests.h */,
-				27462410163785A000180568 /* Mlib_iOSTests.m */,
 				2746240A163785A000180568 /* Supporting Files */,
+				2746241E1637874200180568 /* MMIsEmptyTests.h */,
+				2746241F1637874200180568 /* MMIsEmptyTests.m */,
 			);
 			path = "Mlib-iOSTests";
 			sourceTree = "<group>";
@@ -243,7 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				274623FA1637859F00180568 /* Mlib_iOS.m in Sources */,
+				2746241C163786B200180568 /* MMIsEmpty.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27462411163785A000180568 /* Mlib_iOSTests.m in Sources */,
+				2746241D163786B200180568 /* MMIsEmpty.m in Sources */,
+				274624201637874200180568 /* MMIsEmptyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
