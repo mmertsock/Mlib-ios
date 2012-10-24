@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		274623F31637859F00180568 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274623F21637859F00180568 /* Foundation.framework */; };
+		274623F81637859F00180568 /* Mlib_iOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 274623F71637859F00180568 /* Mlib_iOS.h */; };
+		274623FA1637859F00180568 /* Mlib_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 274623F91637859F00180568 /* Mlib_iOS.m */; };
+		27462402163785A000180568 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27462401163785A000180568 /* SenTestingKit.framework */; };
+		27462404163785A000180568 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27462403163785A000180568 /* UIKit.framework */; };
+		27462405163785A000180568 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274623F21637859F00180568 /* Foundation.framework */; };
+		27462408163785A000180568 /* libMlib-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274623EF1637859F00180568 /* libMlib-iOS.a */; };
+		2746240E163785A000180568 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2746240C163785A000180568 /* InfoPlist.strings */; };
+		27462411163785A000180568 /* Mlib_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27462410163785A000180568 /* Mlib_iOSTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27462406163785A000180568 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 274623E61637859F00180568 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 274623EE1637859F00180568;
+			remoteInfo = "Mlib-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		274623ED1637859F00180568 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				274623F81637859F00180568 /* Mlib_iOS.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		274623EF1637859F00180568 /* libMlib-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libMlib-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		274623F21637859F00180568 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		274623F61637859F00180568 /* Mlib-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mlib-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		274623F71637859F00180568 /* Mlib_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mlib_iOS.h; sourceTree = "<group>"; };
+		274623F91637859F00180568 /* Mlib_iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mlib_iOS.m; sourceTree = "<group>"; };
+		27462400163785A000180568 /* Mlib-iOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mlib-iOSTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27462401163785A000180568 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		27462403163785A000180568 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		2746240B163785A000180568 /* Mlib-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mlib-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		2746240D163785A000180568 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2746240F163785A000180568 /* Mlib_iOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mlib_iOSTests.h; sourceTree = "<group>"; };
+		27462410163785A000180568 /* Mlib_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mlib_iOSTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		274623EC1637859F00180568 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274623F31637859F00180568 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274623FC163785A000180568 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27462402163785A000180568 /* SenTestingKit.framework in Frameworks */,
+				27462404163785A000180568 /* UIKit.framework in Frameworks */,
+				27462405163785A000180568 /* Foundation.framework in Frameworks */,
+				27462408163785A000180568 /* libMlib-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		274623E41637859F00180568 = {
+			isa = PBXGroup;
+			children = (
+				274623F41637859F00180568 /* Mlib-iOS */,
+				27462409163785A000180568 /* Mlib-iOSTests */,
+				274623F11637859F00180568 /* Frameworks */,
+				274623F01637859F00180568 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		274623F01637859F00180568 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				274623EF1637859F00180568 /* libMlib-iOS.a */,
+				27462400163785A000180568 /* Mlib-iOSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		274623F11637859F00180568 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				274623F21637859F00180568 /* Foundation.framework */,
+				27462401163785A000180568 /* SenTestingKit.framework */,
+				27462403163785A000180568 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		274623F41637859F00180568 /* Mlib-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				274623F71637859F00180568 /* Mlib_iOS.h */,
+				274623F91637859F00180568 /* Mlib_iOS.m */,
+				274623F51637859F00180568 /* Supporting Files */,
+			);
+			path = "Mlib-iOS";
+			sourceTree = "<group>";
+		};
+		274623F51637859F00180568 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				274623F61637859F00180568 /* Mlib-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27462409163785A000180568 /* Mlib-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				2746240F163785A000180568 /* Mlib_iOSTests.h */,
+				27462410163785A000180568 /* Mlib_iOSTests.m */,
+				2746240A163785A000180568 /* Supporting Files */,
+			);
+			path = "Mlib-iOSTests";
+			sourceTree = "<group>";
+		};
+		2746240A163785A000180568 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2746240B163785A000180568 /* Mlib-iOSTests-Info.plist */,
+				2746240C163785A000180568 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		274623EE1637859F00180568 /* Mlib-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27462414163785A000180568 /* Build configuration list for PBXNativeTarget "Mlib-iOS" */;
+			buildPhases = (
+				274623EB1637859F00180568 /* Sources */,
+				274623EC1637859F00180568 /* Frameworks */,
+				274623ED1637859F00180568 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mlib-iOS";
+			productName = "Mlib-iOS";
+			productReference = 274623EF1637859F00180568 /* libMlib-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		274623FF163785A000180568 /* Mlib-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27462417163785A000180568 /* Build configuration list for PBXNativeTarget "Mlib-iOSTests" */;
+			buildPhases = (
+				274623FB163785A000180568 /* Sources */,
+				274623FC163785A000180568 /* Frameworks */,
+				274623FD163785A000180568 /* Resources */,
+				274623FE163785A000180568 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27462407163785A000180568 /* PBXTargetDependency */,
+			);
+			name = "Mlib-iOSTests";
+			productName = "Mlib-iOSTests";
+			productReference = 27462400163785A000180568 /* Mlib-iOSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		274623E61637859F00180568 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Mike Mertsock";
+			};
+			buildConfigurationList = 274623E91637859F00180568 /* Build configuration list for PBXProject "Mlib-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 274623E41637859F00180568;
+			productRefGroup = 274623F01637859F00180568 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				274623EE1637859F00180568 /* Mlib-iOS */,
+				274623FF163785A000180568 /* Mlib-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		274623FD163785A000180568 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2746240E163785A000180568 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		274623FE163785A000180568 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		274623EB1637859F00180568 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274623FA1637859F00180568 /* Mlib_iOS.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274623FB163785A000180568 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27462411163785A000180568 /* Mlib_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27462407163785A000180568 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 274623EE1637859F00180568 /* Mlib-iOS */;
+			targetProxy = 27462406163785A000180568 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2746240C163785A000180568 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2746240D163785A000180568 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27462412163785A000180568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		27462413163785A000180568 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27462415163785A000180568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Mlib_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mlib-iOS/Mlib-iOS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		27462416163785A000180568 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Mlib_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mlib-iOS/Mlib-iOS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		27462418163785A000180568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mlib-iOS/Mlib-iOS-Prefix.pch";
+				INFOPLIST_FILE = "Mlib-iOSTests/Mlib-iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		27462419163785A000180568 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mlib-iOS/Mlib-iOS-Prefix.pch";
+				INFOPLIST_FILE = "Mlib-iOSTests/Mlib-iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		274623E91637859F00180568 /* Build configuration list for PBXProject "Mlib-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27462412163785A000180568 /* Debug */,
+				27462413163785A000180568 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27462414163785A000180568 /* Build configuration list for PBXNativeTarget "Mlib-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27462415163785A000180568 /* Debug */,
+				27462416163785A000180568 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27462417163785A000180568 /* Build configuration list for PBXNativeTarget "Mlib-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27462418163785A000180568 /* Debug */,
+				27462419163785A000180568 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 274623E61637859F00180568 /* Project object */;
+}
