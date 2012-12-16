@@ -17,6 +17,7 @@
 		2746241C163786B200180568 /* MMIsEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2746241B163786B200180568 /* MMIsEmpty.m */; };
 		2746241D163786B200180568 /* MMIsEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2746241B163786B200180568 /* MMIsEmpty.m */; };
 		274624201637874200180568 /* MMIsEmptyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2746241F1637874200180568 /* MMIsEmptyTests.m */; };
+		277FBBD416799C5300643B4A /* NSURL+StandardDirectories.m in Sources */ = {isa = PBXBuildFile; fileRef = 277FBBD316799C5300643B4A /* NSURL+StandardDirectories.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		2746241B163786B200180568 /* MMIsEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMIsEmpty.m; sourceTree = "<group>"; };
 		2746241E1637874200180568 /* MMIsEmptyTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMIsEmptyTests.h; sourceTree = "<group>"; };
 		2746241F1637874200180568 /* MMIsEmptyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMIsEmptyTests.m; sourceTree = "<group>"; };
+		277FBBD216799C5300643B4A /* NSURL+StandardDirectories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+StandardDirectories.h"; sourceTree = "<group>"; };
+		277FBBD316799C5300643B4A /* NSURL+StandardDirectories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+StandardDirectories.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				274623F51637859F00180568 /* Supporting Files */,
 				2746241A163786B200180568 /* MMIsEmpty.h */,
 				2746241B163786B200180568 /* MMIsEmpty.m */,
+				277FBBD216799C5300643B4A /* NSURL+StandardDirectories.h */,
+				277FBBD316799C5300643B4A /* NSURL+StandardDirectories.m */,
 			);
 			path = "Mlib-iOS";
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2746241C163786B200180568 /* MMIsEmpty.m in Sources */,
+				277FBBD416799C5300643B4A /* NSURL+StandardDirectories.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +407,7 @@
 				27462416163785A000180568 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27462417163785A000180568 /* Build configuration list for PBXNativeTarget "Mlib-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +416,7 @@
 				27462419163785A000180568 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
