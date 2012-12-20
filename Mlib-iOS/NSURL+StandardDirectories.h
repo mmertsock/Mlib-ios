@@ -2,8 +2,7 @@
 //  NSURL+StandardDirectories.h
 //  Mlib-iOS
 //
-//  Created by Mike on 12/13/12.
-//  Copyright (c) 2012 Mike Mertsock. All rights reserved.
+//  From https://github.com/Club15CC/Marshmallows/blob/master/Source/MarshmallowCocoa/
 //
 
 #import <Foundation/Foundation.h>
