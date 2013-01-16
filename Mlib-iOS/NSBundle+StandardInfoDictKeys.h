@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface NSBundle (StandardInfoDictKeys)
-@property (readonly) NSString* versionString;
-@property (readonly) NSString* buildNumberString;
+@property (nonatomic, readonly) NSString* versionString;
+@property (nonatomic, readonly) NSString* buildNumberString;
 @end
