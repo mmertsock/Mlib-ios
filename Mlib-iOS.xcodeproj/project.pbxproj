@@ -62,6 +62,7 @@
 		2746241F1637874200180568 /* MMIsEmptyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMIsEmptyTests.m; sourceTree = "<group>"; };
 		277FBBD216799C5300643B4A /* NSURL+StandardDirectories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+StandardDirectories.h"; sourceTree = "<group>"; };
 		277FBBD316799C5300643B4A /* NSURL+StandardDirectories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+StandardDirectories.m"; sourceTree = "<group>"; };
+		2796134E17086D8E004FB60D /* MlibConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MlibConstants.h; sourceTree = "<group>"; };
 		27AD59A01682C65600E04FB7 /* UIDevice+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
 		27AD59A11682C65600E04FB7 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
 		27AD59A81682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+StandardInfoDictKeys.h"; sourceTree = "<group>"; };
@@ -137,6 +138,7 @@
 				27AD59A11682C65600E04FB7 /* UIDevice+Hardware.m */,
 				27AD59A81682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.h */,
 				27AD59A91682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.m */,
+				2796134E17086D8E004FB60D /* MlibConstants.h */,
 			);
 			path = "Mlib-iOS";
 			sourceTree = "<group>";
