@@ -15,4 +15,9 @@
     return 216.0f;
 }
 
++ (NSTimeInterval)mm_defaultKeyboardAnimationDuration
+{
+    return 0.25f;
+}
+
 @end
