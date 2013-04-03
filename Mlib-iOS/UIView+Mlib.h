@@ -11,6 +11,11 @@
 @interface UIView (Mlib)
 
 + (CGFloat)mm_phoneKeyboardPortraitStandardHeight;
+
 + (NSTimeInterval)mm_defaultKeyboardAnimationDuration;
+
++ (void)mm_animateConditionally:(BOOL)animate
+                   withDuration:(NSTimeInterval)duration
+                          block:(void (^)(void))animationsOrImmediateChanges;
 
 @end
