@@ -20,14 +20,4 @@
     return 0.25f;
 }
 
-+ (void)mm_animateConditionally:(BOOL)animate
-                   withDuration:(NSTimeInterval)duration
-                          block:(void (^)(void))animationsOrImmediateChanges
-{
-    if (animate)
-        [UIView animateWithDuration:duration animations:animationsOrImmediateChanges];
-    else
-        animationsOrImmediateChanges();
-}
-
 @end
