@@ -20,7 +20,6 @@
 		27961353170BC037004FB60D /* UIView+Mlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 27961352170BC037004FB60D /* UIView+Mlib.m */; };
 		27AD59A21682C65600E04FB7 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AD59A11682C65600E04FB7 /* UIDevice+Hardware.m */; };
 		27AD59AA1682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AD59A91682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.m */; };
-		66DEA5DBFA6C47FD84EC52DC /* libPods-Mlib-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10946F7F7D6946659C6B701A /* libPods-Mlib-iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +46,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		10946F7F7D6946659C6B701A /* libPods-Mlib-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mlib-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		274623EF1637859F00180568 /* libMlib-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libMlib-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		274623F21637859F00180568 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		274623F61637859F00180568 /* Mlib-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mlib-iOS-Prefix.pch"; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 		27AD59A11682C65600E04FB7 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
 		27AD59A81682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+StandardInfoDictKeys.h"; sourceTree = "<group>"; };
 		27AD59A91682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+StandardInfoDictKeys.m"; sourceTree = "<group>"; };
-		C26AF7AEF42646D28140376F /* Pods-Mlib-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mlib-iOS.xcconfig"; path = "Pods/Pods-Mlib-iOS.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +75,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				274623F31637859F00180568 /* Foundation.framework in Frameworks */,
-				66DEA5DBFA6C47FD84EC52DC /* libPods-Mlib-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +99,6 @@
 				27462409163785A000180568 /* Mlib-iOSTests */,
 				274623F11637859F00180568 /* Frameworks */,
 				274623F01637859F00180568 /* Products */,
-				C26AF7AEF42646D28140376F /* Pods-Mlib-iOS.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,7 +117,6 @@
 				274623F21637859F00180568 /* Foundation.framework */,
 				27462401163785A000180568 /* SenTestingKit.framework */,
 				27462403163785A000180568 /* UIKit.framework */,
-				10946F7F7D6946659C6B701A /* libPods-Mlib-iOS.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,9 +151,9 @@
 		27462409163785A000180568 /* Mlib-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				2746240A163785A000180568 /* Supporting Files */,
 				2746241E1637874200180568 /* MMIsEmptyTests.h */,
 				2746241F1637874200180568 /* MMIsEmptyTests.m */,
+				2746240A163785A000180568 /* Supporting Files */,
 			);
 			path = "Mlib-iOSTests";
 			sourceTree = "<group>";
@@ -183,7 +177,6 @@
 				274623EB1637859F00180568 /* Sources */,
 				274623EC1637859F00180568 /* Frameworks */,
 				274623ED1637859F00180568 /* CopyFiles */,
-				1D2324A6C63D4897AA542C2A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,20 +245,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1D2324A6C63D4897AA542C2A /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-Mlib-iOS-resources.sh\"\n";
-		};
 		274623FE163785A000180568 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,7 +352,6 @@
 		};
 		27462415163785A000180568 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C26AF7AEF42646D28140376F /* Pods-Mlib-iOS.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Mlib_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -385,7 +363,6 @@
 		};
 		27462416163785A000180568 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C26AF7AEF42646D28140376F /* Pods-Mlib-iOS.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Mlib_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -405,6 +382,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mlib-iOS/Mlib-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Mlib-iOSTests/Mlib-iOSTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -420,6 +398,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mlib-iOS/Mlib-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Mlib-iOSTests/Mlib-iOSTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
