@@ -3,3 +3,5 @@
 #import "UIDevice+Hardware.h"
 #import "NSBundle+StandardInfoDictKeys.h"
 #import "UIView+Mlib.h"
+#import "NSDecimalNumber+Mlib.h"
+#import "NSString+Mlib.h"
