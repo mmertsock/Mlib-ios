@@ -26,6 +26,7 @@
 		27AD59AA1682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AD59A91682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.m */; };
 		27B1B06C17510B0D00D7913E /* NSArray+Mlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B1B06B17510B0D00D7913E /* NSArray+Mlib.m */; };
 		27B1B06F17510B7000D7913E /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B1B06E17510B7000D7913E /* NSArrayTests.m */; };
+		27B492A71789C3430014D51D /* UIStoryboardSegue+MMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B492A61789C3430014D51D /* UIStoryboardSegue+MMNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		27B1B06B17510B0D00D7913E /* NSArray+Mlib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Mlib.m"; sourceTree = "<group>"; };
 		27B1B06D17510B7000D7913E /* NSArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayTests.h; sourceTree = "<group>"; };
 		27B1B06E17510B7000D7913E /* NSArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTests.m; sourceTree = "<group>"; };
+		27B492A51789C3430014D51D /* UIStoryboardSegue+MMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboardSegue+MMNavigationController.h"; sourceTree = "<group>"; };
+		27B492A61789C3430014D51D /* UIStoryboardSegue+MMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboardSegue+MMNavigationController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,23 +146,10 @@
 			isa = PBXGroup;
 			children = (
 				274623F71637859F00180568 /* Mlib_iOS.h */,
-				2746241A163786B200180568 /* MMIsEmpty.h */,
-				2746241B163786B200180568 /* MMIsEmpty.m */,
-				27B1B06A17510B0D00D7913E /* NSArray+Mlib.h */,
-				27B1B06B17510B0D00D7913E /* NSArray+Mlib.m */,
-				27AD59A81682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.h */,
-				27AD59A91682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.m */,
-				2725CA4F172E25C4005AF3EB /* NSDecimalNumber+Mlib.h */,
-				2725CA50172E25C4005AF3EB /* NSDecimalNumber+Mlib.m */,
-				2725CA51172E25C4005AF3EB /* NSString+Mlib.h */,
-				2725CA52172E25C4005AF3EB /* NSString+Mlib.m */,
-				277FBBD216799C5300643B4A /* NSURL+StandardDirectories.h */,
-				277FBBD316799C5300643B4A /* NSURL+StandardDirectories.m */,
+				27B492A21789C2FE0014D51D /* Foundation */,
+				27B492A31789C3180014D51D /* AppKit */,
 				274623F51637859F00180568 /* Supporting Files */,
-				27AD59A01682C65600E04FB7 /* UIDevice+Hardware.h */,
-				27AD59A11682C65600E04FB7 /* UIDevice+Hardware.m */,
-				27961351170BC037004FB60D /* UIView+Mlib.h */,
-				27961352170BC037004FB60D /* UIView+Mlib.m */,
+				27B492A41789C3230014D51D /* UIKit */,
 			);
 			path = "Mlib-iOS";
 			sourceTree = "<group>";
@@ -195,6 +185,45 @@
 				2746240C163785A000180568 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27B492A21789C2FE0014D51D /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				2746241A163786B200180568 /* MMIsEmpty.h */,
+				2746241B163786B200180568 /* MMIsEmpty.m */,
+				27B1B06A17510B0D00D7913E /* NSArray+Mlib.h */,
+				27B1B06B17510B0D00D7913E /* NSArray+Mlib.m */,
+				2725CA4F172E25C4005AF3EB /* NSDecimalNumber+Mlib.h */,
+				2725CA50172E25C4005AF3EB /* NSDecimalNumber+Mlib.m */,
+				2725CA51172E25C4005AF3EB /* NSString+Mlib.h */,
+				2725CA52172E25C4005AF3EB /* NSString+Mlib.m */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		27B492A31789C3180014D51D /* AppKit */ = {
+			isa = PBXGroup;
+			children = (
+				27AD59A81682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.h */,
+				27AD59A91682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.m */,
+				277FBBD216799C5300643B4A /* NSURL+StandardDirectories.h */,
+				277FBBD316799C5300643B4A /* NSURL+StandardDirectories.m */,
+				27AD59A01682C65600E04FB7 /* UIDevice+Hardware.h */,
+				27AD59A11682C65600E04FB7 /* UIDevice+Hardware.m */,
+			);
+			name = AppKit;
+			sourceTree = "<group>";
+		};
+		27B492A41789C3230014D51D /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				27961351170BC037004FB60D /* UIView+Mlib.h */,
+				27961352170BC037004FB60D /* UIView+Mlib.m */,
+				27B492A51789C3430014D51D /* UIStoryboardSegue+MMNavigationController.h */,
+				27B492A61789C3430014D51D /* UIStoryboardSegue+MMNavigationController.m */,
+			);
+			name = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +332,7 @@
 				2725CA53172E25C4005AF3EB /* NSDecimalNumber+Mlib.m in Sources */,
 				2725CA54172E25C4005AF3EB /* NSString+Mlib.m in Sources */,
 				27B1B06C17510B0D00D7913E /* NSArray+Mlib.m in Sources */,
+				27B492A71789C3430014D51D /* UIStoryboardSegue+MMNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
