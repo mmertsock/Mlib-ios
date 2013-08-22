@@ -8,8 +8,9 @@
 #
 Pod::Spec.new do |s|
   s.name         = "Mlib-iOS"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of Mlib-iOS."
+  s.version      = "0.1.0"
+  s.src          = { :git => "https://github.com/mmertsock/Mlib-ios.git", :tag => "v#{s.version}" }
+  s.summary      = "Basic utility code for iOS projects."
   # s.description  = <<-DESC
   #                   An optional longer description of Mlib-iOS
   #
@@ -40,7 +41,7 @@ Pod::Spec.new do |s|
   # Specify the authors of the library, with email addresses. You can often find
   # the email addresses of the authors by using the SCM log. E.g. $ git log
   #
-  s.author       = "MM"
+  s.author       = "mmertsock"
   #
   # If absolutely no email addresses are available, then you can use this form instead.
   #
