@@ -115,3 +115,5 @@ xcuserdata
 ############################# Project-specific ignores #####
 
 Pods/
+publish_pod.sh
+
