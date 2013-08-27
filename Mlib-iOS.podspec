@@ -8,8 +8,8 @@
 #
 Pod::Spec.new do |s|
   s.name         = "Mlib-iOS"
-  s.version      = "0.1.0"
-  s.src          = { :git => "https://github.com/mmertsock/Mlib-ios.git", :tag => "v#{s.version}" }
+  s.version      = "0.1.1"
+  s.source          = { :git => "https://github.com/mmertsock/Mlib-ios.git", :tag => "v#{s.version}" }
   s.summary      = "Basic utility code for iOS projects."
   # s.description  = <<-DESC
   #                   An optional longer description of Mlib-iOS
