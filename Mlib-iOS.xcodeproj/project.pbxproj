@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27159AFC183EFCD00094A4BA /* MMScopeNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 27159AFB183EFCD00094A4BA /* MMScopeNavigationBar.m */; };
 		2725CA53172E25C4005AF3EB /* NSDecimalNumber+Mlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 2725CA50172E25C4005AF3EB /* NSDecimalNumber+Mlib.m */; };
 		2725CA54172E25C4005AF3EB /* NSString+Mlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 2725CA52172E25C4005AF3EB /* NSString+Mlib.m */; };
 		2725CA59172E25D3005AF3EB /* NSDecimalNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2725CA56172E25D3005AF3EB /* NSDecimalNumberTests.m */; };
@@ -53,6 +54,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		27159AFA183EFCD00094A4BA /* MMScopeNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMScopeNavigationBar.h; sourceTree = "<group>"; };
+		27159AFB183EFCD00094A4BA /* MMScopeNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMScopeNavigationBar.m; sourceTree = "<group>"; };
 		2725CA4F172E25C4005AF3EB /* NSDecimalNumber+Mlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+Mlib.h"; sourceTree = "<group>"; };
 		2725CA50172E25C4005AF3EB /* NSDecimalNumber+Mlib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+Mlib.m"; sourceTree = "<group>"; };
 		2725CA51172E25C4005AF3EB /* NSString+Mlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Mlib.h"; sourceTree = "<group>"; };
@@ -218,10 +221,12 @@
 		27B492A41789C3230014D51D /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				27961351170BC037004FB60D /* UIView+Mlib.h */,
-				27961352170BC037004FB60D /* UIView+Mlib.m */,
+				27159AFA183EFCD00094A4BA /* MMScopeNavigationBar.h */,
+				27159AFB183EFCD00094A4BA /* MMScopeNavigationBar.m */,
 				27B492A51789C3430014D51D /* UIStoryboardSegue+MMNavigationController.h */,
 				27B492A61789C3430014D51D /* UIStoryboardSegue+MMNavigationController.m */,
+				27961351170BC037004FB60D /* UIView+Mlib.h */,
+				27961352170BC037004FB60D /* UIView+Mlib.m */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 			files = (
 				2746241C163786B200180568 /* MMIsEmpty.m in Sources */,
 				277FBBD416799C5300643B4A /* NSURL+StandardDirectories.m in Sources */,
+				27159AFC183EFCD00094A4BA /* MMScopeNavigationBar.m in Sources */,
 				27AD59A21682C65600E04FB7 /* UIDevice+Hardware.m in Sources */,
 				27AD59AA1682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.m in Sources */,
 				27961353170BC037004FB60D /* UIView+Mlib.m in Sources */,
