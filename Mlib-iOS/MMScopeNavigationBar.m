@@ -64,13 +64,13 @@ static const CGFloat SCOPE_HEIGHT = 44.0f;
 - (void)didAddSubview:(UIView *)subview
 {
     [super didAddSubview:subview];
-    if ([subview isKindOfClass:[UIToolbar class]]) {
+    if ([subview isKindOfClass:[UISegmentedControl class]]) {
         CGRect frame = subview.frame;
-        subview.frame = CGRectMake(frame.origin.x, frame.origin.y + SCOPE_HEIGHT, frame.size.width, frame.size.height);
-    } else if ([subview isKindOfClass:[UISegmentedControl class]]) {
-        CGRect frame = subview.frame;
+        // Center horizontally
         CGFloat x = 0.5f * (self.bounds.size.width - frame.size.width);
-        subview.frame = CGRectMake(x, frame.origin.y + SCOPE_HEIGHT, frame.size.width, frame.size.height);
+        // Center vertically in the bottom half of the nav bar
+        CGFloat y = SCOPE_HEIGHT + 0.5f * (SCOPE_HEIGHT - frame.size.height);
+        subview.frame = CGRectMake(x, y, frame.size.width, frame.size.height);
     }
 }
 
