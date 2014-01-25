@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDecimalNumber (Mlib)
-- (NSUInteger)fractionalPartToPlaces:(short)decimalPlaces;
+- (NSUInteger)mm_fractionalPartToPlaces:(short)decimalPlaces;
 @end

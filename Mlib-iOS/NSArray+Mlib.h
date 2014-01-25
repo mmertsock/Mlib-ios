@@ -10,7 +10,8 @@
 
 @interface NSArray (Mlib)
 
-- (NSArray *)arrayByRemovingObject:(id)anObject;
-- (NSArray *)arrayByInsertingObject:(id)anObject atIndex:(NSUInteger)index;
+- (NSArray *)mm_arrayByRemovingObject:(id)anObject;
+- (NSArray *)mm_arrayByInsertingObject:(id)anObject
+                               atIndex:(NSUInteger)index;
 
 @end

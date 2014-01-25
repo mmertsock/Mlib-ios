@@ -10,14 +10,15 @@
 
 @implementation NSArray (Mlib)
 
-- (NSArray *)arrayByRemovingObject:(id)anObject
+- (NSArray *)mm_arrayByRemovingObject:(id)anObject
 {
     NSMutableArray *newArray = [NSMutableArray arrayWithArray:self];
     [newArray removeObject:anObject];
     return newArray;
 }
 
-- (NSArray *)arrayByInsertingObject:(id)anObject atIndex:(NSUInteger)index
+- (NSArray *)mm_arrayByInsertingObject:(id)anObject
+                               atIndex:(NSUInteger)index
 {
     NSMutableArray *newArray = [NSMutableArray arrayWithArray:self];
     [newArray insertObject:anObject atIndex:index];

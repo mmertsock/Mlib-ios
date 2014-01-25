@@ -11,6 +11,6 @@
 @interface NSString (Mlib)
 // use this to determine if text is being appended to a string rather than
 // removing or replacing characters elsewhere in the string
-- (BOOL)isAppendingTextWithRange:(NSRange)range
-               replacementString:(NSString *)string;
+- (BOOL)mm_isAppendingTextWithRange:(NSRange)range
+                  replacementString:(NSString *)string;
 @end

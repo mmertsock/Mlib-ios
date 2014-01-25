@@ -15,16 +15,16 @@
 {
     NSArray *original = @[@"a", @"b", @"c", @"b"];
     
-    NSArray *modified = [original arrayByRemovingObject:nil];
+    NSArray *modified = [original mm_arrayByRemovingObject:nil];
     STAssertEqualObjects(modified, original, @"Removing nil should produce equal array");
     
-    modified = [original arrayByRemovingObject:@"bogus"];
+    modified = [original mm_arrayByRemovingObject:@"bogus"];
     STAssertEqualObjects(modified, original, @"Removing item not in array should produce equal array");
     
-    modified = [original arrayByRemovingObject:@"a"];
+    modified = [original mm_arrayByRemovingObject:@"a"];
     STAssertEqualObjects(modified, (@[@"b", @"c", @"b"]), @"The new array should not contain 'a'.");
     
-    modified = [original arrayByRemovingObject:@"b"];
+    modified = [original mm_arrayByRemovingObject:@"b"];
     STAssertEqualObjects(modified, (@[@"a", @"c"]), @"The new array should not contain either instance of 'b'.");
 }
 
@@ -32,15 +32,15 @@
 {
     NSArray *original = @[@"a", @"b", @"c"];
     
-    NSArray *modified = [original arrayByInsertingObject:@"new"
+    NSArray *modified = [original mm_arrayByInsertingObject:@"new"
                                                  atIndex:0];
     STAssertEqualObjects(modified, (@[@"new", @"a", @"b", @"c"]), @"New object is inserted at the start");
     
-    modified = [original arrayByInsertingObject:@"new"
+    modified = [original mm_arrayByInsertingObject:@"new"
                                         atIndex:(original.count - 1)];
     STAssertEqualObjects(modified, (@[@"a", @"b", @"new", @"c"]), @"New object is inserted in the middle");
     
-    modified = [original arrayByInsertingObject:@"new"
+    modified = [original mm_arrayByInsertingObject:@"new"
                                         atIndex:original.count];
     STAssertEqualObjects(modified, (@[@"a", @"b", @"c", @"new"]), @"New object is inserted at the end");
 }

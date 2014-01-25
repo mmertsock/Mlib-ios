@@ -10,8 +10,8 @@
 
 @implementation NSString (Mlib)
 
-- (BOOL)isAppendingTextWithRange:(NSRange)range
-               replacementString:(NSString *)string
+- (BOOL)mm_isAppendingTextWithRange:(NSRange)range
+                  replacementString:(NSString *)string
 {
     return range.location == self.length
         && range.length == 0

@@ -10,7 +10,7 @@
 
 @implementation NSDecimalNumber (Mlib)
 
-- (NSUInteger)fractionalPartToPlaces:(short)decimalPlaces
+- (NSUInteger)mm_fractionalPartToPlaces:(short)decimalPlaces
 {
     NSAssert(decimalPlaces >= 0, @"decimalPlaces must not be negative");
     
