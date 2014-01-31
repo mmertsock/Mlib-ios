@@ -20,22 +20,20 @@
 - (void)setUp
 {
     [super setUp];
-    _oldSharedPrefs = [MMUserDefaultsBase sharedPreferences];
+    _oldSharedPrefs = [MMUserDefaultsBase sharedDefaults];
 }
 
 - (void)tearDown
 {
-    [MMUserDefaultsBase setSharedPreferences:_oldSharedPrefs];
+    [MMUserDefaultsBase setSharedDefaults:_oldSharedPrefs];
     [super tearDown];
 }
 
 - (void)testDefaultSharedPreferences
 {
-    MMUserDefaultsBase *SUT = [MMUserDefaultsBase sharedPreferences];
+    MMUserDefaultsBase *SUT = [MMUserDefaultsBase sharedDefaults];
     XCTAssertNotNil(SUT);
-
-    id defaults = [SUT performSelector:@selector(userDefaults)];
-    XCTAssertEqual(defaults, [NSUserDefaults standardUserDefaults]);
+    XCTAssertEqual(SUT.userDefaults, [NSUserDefaults standardUserDefaults]);
 }
 
 @end

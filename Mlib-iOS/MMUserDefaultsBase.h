@@ -12,12 +12,14 @@
 // This is meant to be subclassed.
 @interface MMUserDefaultsBase : NSObject
 
-+ (MMUserDefaultsBase *)sharedPreferences;
-+ (void)setSharedPreferences:(MMUserDefaultsBase *)instance; // for testing
++ (instancetype)sharedDefaults;
++ (void)setSharedDefaults:(MMUserDefaultsBase *)instance; // for testing
 
 - (id)init;
 - (id)initWithUserDefaults:(NSUserDefaults *)userDefaults; // for testing
 
 - (void)synchronize;
+
+@property (readonly, nonatomic) NSUserDefaults *userDefaults;
 
 @end

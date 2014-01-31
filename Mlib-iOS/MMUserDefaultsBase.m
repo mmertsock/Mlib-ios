@@ -13,17 +13,16 @@ static __strong MMUserDefaultsBase *_sharedPreferences;
 @interface MMUserDefaultsBase () {
     __strong NSUserDefaults *_userDefaults;
 }
-@property (readonly, nonatomic) NSUserDefaults *userDefaults;
 @end
 
 @implementation MMUserDefaultsBase
 
-+ (MMUserDefaultsBase *)sharedPreferences
++ (instancetype)sharedDefaults
 {
-    return _sharedPreferences ?: (_sharedPreferences = [MMUserDefaultsBase new]);
+    return _sharedPreferences ?: (_sharedPreferences = [[self alloc] init]);
 }
 
-+ (void)setSharedPreferences:(MMUserDefaultsBase *)instance
++ (void)setSharedDefaults:(MMUserDefaultsBase *)instance
 {
     _sharedPreferences = instance;
 }
