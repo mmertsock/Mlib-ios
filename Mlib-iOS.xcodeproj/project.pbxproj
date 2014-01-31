@@ -25,6 +25,8 @@
 		27961353170BC037004FB60D /* UIView+Mlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 27961352170BC037004FB60D /* UIView+Mlib.m */; };
 		27AD59A21682C65600E04FB7 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AD59A11682C65600E04FB7 /* UIDevice+Hardware.m */; };
 		27AD59AA1682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AD59A91682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.m */; };
+		27B0DE1E189B4899009CBF85 /* MMUserPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B0DE1D189B4899009CBF85 /* MMUserPreferences.m */; };
+		27B0DE20189B4983009CBF85 /* MMUserPreferencesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B0DE1F189B4983009CBF85 /* MMUserPreferencesTests.m */; };
 		27B1B06C17510B0D00D7913E /* NSArray+Mlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B1B06B17510B0D00D7913E /* NSArray+Mlib.m */; };
 		27B1B06F17510B7000D7913E /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B1B06E17510B7000D7913E /* NSArrayTests.m */; };
 		27B492A71789C3430014D51D /* UIStoryboardSegue+MMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B492A61789C3430014D51D /* UIStoryboardSegue+MMNavigationController.m */; };
@@ -85,6 +87,9 @@
 		27AD59A11682C65600E04FB7 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
 		27AD59A81682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+StandardInfoDictKeys.h"; sourceTree = "<group>"; };
 		27AD59A91682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+StandardInfoDictKeys.m"; sourceTree = "<group>"; };
+		27B0DE1C189B4899009CBF85 /* MMUserPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUserPreferences.h; sourceTree = "<group>"; };
+		27B0DE1D189B4899009CBF85 /* MMUserPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUserPreferences.m; sourceTree = "<group>"; };
+		27B0DE1F189B4983009CBF85 /* MMUserPreferencesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUserPreferencesTests.m; sourceTree = "<group>"; };
 		27B1B06A17510B0D00D7913E /* NSArray+Mlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Mlib.h"; sourceTree = "<group>"; };
 		27B1B06B17510B0D00D7913E /* NSArray+Mlib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Mlib.m"; sourceTree = "<group>"; };
 		27B1B06D17510B7000D7913E /* NSArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayTests.h; sourceTree = "<group>"; };
@@ -168,15 +173,16 @@
 		27462409163785A000180568 /* Mlib-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				2746241E1637874200180568 /* MMIsEmptyTests.h */,
+				2746241F1637874200180568 /* MMIsEmptyTests.m */,
+				27B0DE1F189B4983009CBF85 /* MMUserPreferencesTests.m */,
+				27B1B06D17510B7000D7913E /* NSArrayTests.h */,
+				27B1B06E17510B7000D7913E /* NSArrayTests.m */,
 				2725CA55172E25D3005AF3EB /* NSDecimalNumberTests.h */,
 				2725CA56172E25D3005AF3EB /* NSDecimalNumberTests.m */,
 				2725CA57172E25D3005AF3EB /* NSStringTests.h */,
 				2725CA58172E25D3005AF3EB /* NSStringTests.m */,
-				2746241E1637874200180568 /* MMIsEmptyTests.h */,
-				2746241F1637874200180568 /* MMIsEmptyTests.m */,
 				2746240A163785A000180568 /* Supporting Files */,
-				27B1B06D17510B7000D7913E /* NSArrayTests.h */,
-				27B1B06E17510B7000D7913E /* NSArrayTests.m */,
 			);
 			path = "Mlib-iOSTests";
 			sourceTree = "<group>";
@@ -208,6 +214,8 @@
 		27B492A31789C3180014D51D /* AppKit */ = {
 			isa = PBXGroup;
 			children = (
+				27B0DE1C189B4899009CBF85 /* MMUserPreferences.h */,
+				27B0DE1D189B4899009CBF85 /* MMUserPreferences.m */,
 				27AD59A81682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.h */,
 				27AD59A91682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.m */,
 				277FBBD216799C5300643B4A /* NSURL+StandardDirectories.h */,
@@ -336,6 +344,7 @@
 				27AD59AA1682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.m in Sources */,
 				27961353170BC037004FB60D /* UIView+Mlib.m in Sources */,
 				2725CA53172E25C4005AF3EB /* NSDecimalNumber+Mlib.m in Sources */,
+				27B0DE1E189B4899009CBF85 /* MMUserPreferences.m in Sources */,
 				2725CA54172E25C4005AF3EB /* NSString+Mlib.m in Sources */,
 				27B1B06C17510B0D00D7913E /* NSArray+Mlib.m in Sources */,
 				27B492A71789C3430014D51D /* UIStoryboardSegue+MMNavigationController.m in Sources */,
@@ -349,6 +358,7 @@
 				274624201637874200180568 /* MMIsEmptyTests.m in Sources */,
 				2725CA59172E25D3005AF3EB /* NSDecimalNumberTests.m in Sources */,
 				2725CA5A172E25D3005AF3EB /* NSStringTests.m in Sources */,
+				27B0DE20189B4983009CBF85 /* MMUserPreferencesTests.m in Sources */,
 				27B1B06F17510B7000D7913E /* NSArrayTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
