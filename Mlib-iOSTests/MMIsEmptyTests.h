@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 Mike Mertsock. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface MMIsEmptyTests : SenTestCase
+@interface MMIsEmptyTests : XCTestCase
 
 @end

@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Mike Mertsock. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface NSStringTests : SenTestCase
+@interface NSStringTests : XCTestCase
 
 @end

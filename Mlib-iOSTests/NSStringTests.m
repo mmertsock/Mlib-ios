@@ -15,19 +15,19 @@
 {
     NSString *orig = @"orig";
     
-    STAssertEquals(NO, [orig mm_isAppendingTextWithRange:NSMakeRange(3, 1) replacementString:@""], @"deleting last character");
-    STAssertEquals(NO, [orig mm_isAppendingTextWithRange:NSMakeRange(0, 1) replacementString:@""], @"deleting first character");
-    STAssertEquals(NO, [orig mm_isAppendingTextWithRange:NSMakeRange(0, 0) replacementString:@"X"], @"inserting at start");
-    STAssertEquals(NO, [orig mm_isAppendingTextWithRange:NSMakeRange(3, 0) replacementString:@"X"], @"inserting before end");
-    STAssertEquals(YES, [orig mm_isAppendingTextWithRange:NSMakeRange(4, 0) replacementString:@"X"], @"adding to end");
+    XCTAssertEqual(NO, [orig mm_isAppendingTextWithRange:NSMakeRange(3, 1) replacementString:@""], @"deleting last character");
+    XCTAssertEqual(NO, [orig mm_isAppendingTextWithRange:NSMakeRange(0, 1) replacementString:@""], @"deleting first character");
+    XCTAssertEqual(NO, [orig mm_isAppendingTextWithRange:NSMakeRange(0, 0) replacementString:@"X"], @"inserting at start");
+    XCTAssertEqual(NO, [orig mm_isAppendingTextWithRange:NSMakeRange(3, 0) replacementString:@"X"], @"inserting before end");
+    XCTAssertEqual(YES, [orig mm_isAppendingTextWithRange:NSMakeRange(4, 0) replacementString:@"X"], @"adding to end");
     
     // Whenever existing characters are being replaced, do not consider
     // this to be appending text. "appending text" is more of the simple
     // case of typing at the end of a string when there is no selection.
-    STAssertEquals(NO, [orig mm_isAppendingTextWithRange:NSMakeRange(3, 1) replacementString:@"X"], @"replacing at end");
-    STAssertEquals(NO, [orig mm_isAppendingTextWithRange:NSMakeRange(2, 2) replacementString:@"XYZ"], @"replacing at end with longer");
-    STAssertEquals(NO, [orig mm_isAppendingTextWithRange:NSMakeRange(2, 2) replacementString:@"X"], @"replacing at end with shorter");
-    STAssertEquals(NO, [orig mm_isAppendingTextWithRange:NSMakeRange(2, 1) replacementString:@"X"], @"replacing in center");
+    XCTAssertEqual(NO, [orig mm_isAppendingTextWithRange:NSMakeRange(3, 1) replacementString:@"X"], @"replacing at end");
+    XCTAssertEqual(NO, [orig mm_isAppendingTextWithRange:NSMakeRange(2, 2) replacementString:@"XYZ"], @"replacing at end with longer");
+    XCTAssertEqual(NO, [orig mm_isAppendingTextWithRange:NSMakeRange(2, 2) replacementString:@"X"], @"replacing at end with shorter");
+    XCTAssertEqual(NO, [orig mm_isAppendingTextWithRange:NSMakeRange(2, 1) replacementString:@"X"], @"replacing in center");
 }
 
 @end

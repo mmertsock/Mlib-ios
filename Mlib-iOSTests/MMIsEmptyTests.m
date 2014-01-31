@@ -37,52 +37,52 @@
 
 - (void)testIsEmptyIsYesForEmptyValues
 {
-    STAssertTrue(MMIsEmpty(nil), @"nil is empty");
-    STAssertTrue(MMIsEmpty([NSNull null]), @"NSNull is empty");
-    STAssertTrue(MMIsEmpty(@""), @"Zero-length string is empty");
-    STAssertTrue(MMIsEmpty([NSArray array]), @"Zero-count array is empty");
-    STAssertTrue(MMIsEmpty([NSDictionary dictionary]), @"Zero-count dict is empty");
-    STAssertTrue(MMIsEmpty([[MMTestClassWithCustomLengthProperty alloc] initWithLength:0]),
+    XCTAssertTrue(MMIsEmpty(nil), @"nil is empty");
+    XCTAssertTrue(MMIsEmpty([NSNull null]), @"NSNull is empty");
+    XCTAssertTrue(MMIsEmpty(@""), @"Zero-length string is empty");
+    XCTAssertTrue(MMIsEmpty([NSArray array]), @"Zero-count array is empty");
+    XCTAssertTrue(MMIsEmpty([NSDictionary dictionary]), @"Zero-count dict is empty");
+    XCTAssertTrue(MMIsEmpty([[MMTestClassWithCustomLengthProperty alloc] initWithLength:0]),
                  @"Custom length property=0 is empty");
 }
 
 - (void)testIsEmptyIsNoForNonEmptyValues
 {
     NSUUID* nonNil = [NSUUID UUID];
-    STAssertFalse(MMIsEmpty(nonNil), @"non nil is not empty");
-    STAssertFalse(MMIsEmpty(@"test"), @"String with chars is not empty");
-    STAssertFalse(MMIsEmpty([NSArray arrayWithObject:@"test"]),
+    XCTAssertFalse(MMIsEmpty(nonNil), @"non nil is not empty");
+    XCTAssertFalse(MMIsEmpty(@"test"), @"String with chars is not empty");
+    XCTAssertFalse(MMIsEmpty([NSArray arrayWithObject:@"test"]),
                   @"Array with elements is not empty");
-    STAssertFalse(MMIsEmpty([NSDictionary dictionaryWithObject:@"test" forKey:@"test"]),
+    XCTAssertFalse(MMIsEmpty([NSDictionary dictionaryWithObject:@"test" forKey:@"test"]),
                   @"Dict with data is not empty");
-    STAssertFalse(MMIsEmpty([[MMTestClassWithCustomLengthProperty alloc] initWithLength:5]),
+    XCTAssertFalse(MMIsEmpty([[MMTestClassWithCustomLengthProperty alloc] initWithLength:5]),
                   @"Custom length property=5 is not empty");
-    STAssertFalse(MMStringIsEmpty(@"  \t \n  "),
+    XCTAssertFalse(MMStringIsEmpty(@"  \t \n  "),
                   @"String with only whitespace is non empty");
 }
 
 - (void)testStringIsEmptyIsYesForEmptyOrNilStrings
 {
-    STAssertTrue(MMStringIsEmpty(nil), @"nil string is empty");
-    STAssertTrue(MMStringIsEmpty(@""), @"zero length string is empty");
+    XCTAssertTrue(MMStringIsEmpty(nil), @"nil string is empty");
+    XCTAssertTrue(MMStringIsEmpty(@""), @"zero length string is empty");
 }
 
 - (void)testStringIsEmptyIsNoForNonEmptyStrings
 {
-    STAssertFalse(MMStringIsEmpty(@"test"), @"String with chars is non empty");
-    STAssertFalse(MMStringIsEmpty(@"  \t \n  "), @"String with only whitespace is non empty");
+    XCTAssertFalse(MMStringIsEmpty(@"test"), @"String with chars is non empty");
+    XCTAssertFalse(MMStringIsEmpty(@"  \t \n  "), @"String with only whitespace is non empty");
 }
 
 - (void)testStringIsEmptyOrWhitespaceIsYesForEmptyOrWhitespaceStrings
 {
-    STAssertTrue(MMStringIsEmptyOrWhitespace(nil), @"nil string is empty/whitespace");
-    STAssertTrue(MMStringIsEmptyOrWhitespace(@""), @"zero length string is empty/whitespace");
-    STAssertTrue(MMStringIsEmptyOrWhitespace(@"  \t \n  "), @"String with only whitespace is empty/whitespace");
+    XCTAssertTrue(MMStringIsEmptyOrWhitespace(nil), @"nil string is empty/whitespace");
+    XCTAssertTrue(MMStringIsEmptyOrWhitespace(@""), @"zero length string is empty/whitespace");
+    XCTAssertTrue(MMStringIsEmptyOrWhitespace(@"  \t \n  "), @"String with only whitespace is empty/whitespace");
 }
 
 - (void)testStringIsEmptyOrWhitespaceIsNoForNonEmptyStrings
 {
-    STAssertFalse(MMStringIsEmptyOrWhitespace(@"  test  "), @"String with chars is non empty");
+    XCTAssertFalse(MMStringIsEmptyOrWhitespace(@"  test  "), @"String with chars is non empty");
 }
 
 @end
