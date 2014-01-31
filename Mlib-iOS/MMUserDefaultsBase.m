@@ -6,24 +6,24 @@
 //  Copyright (c) 2014 Mike Mertsock. All rights reserved.
 //
 
-#import "MMUserPreferences.h"
+#import "MMUserDefaultsBase.h"
 
-static __strong MMUserPreferences *_sharedPreferences;
+static __strong MMUserDefaultsBase *_sharedPreferences;
 
-@interface MMUserPreferences () {
+@interface MMUserDefaultsBase () {
     __strong NSUserDefaults *_userDefaults;
 }
 @property (readonly, nonatomic) NSUserDefaults *userDefaults;
 @end
 
-@implementation MMUserPreferences
+@implementation MMUserDefaultsBase
 
-+ (MMUserPreferences *)sharedPreferences
++ (MMUserDefaultsBase *)sharedPreferences
 {
-    return _sharedPreferences ?: (_sharedPreferences = [MMUserPreferences new]);
+    return _sharedPreferences ?: (_sharedPreferences = [MMUserDefaultsBase new]);
 }
 
-+ (void)setSharedPreferences:(MMUserPreferences *)instance
++ (void)setSharedPreferences:(MMUserDefaultsBase *)instance
 {
     _sharedPreferences = instance;
 }

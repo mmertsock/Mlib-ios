@@ -10,10 +10,10 @@
 
 // Simple wrapper around NSUserDefaults for abstraction and testability.
 // This is meant to be subclassed.
-@interface MMUserPreferences : NSObject
+@interface MMUserDefaultsBase : NSObject
 
-+ (MMUserPreferences *)sharedPreferences;
-+ (void)setSharedPreferences:(MMUserPreferences *)instance; // for testing
++ (MMUserDefaultsBase *)sharedPreferences;
++ (void)setSharedPreferences:(MMUserDefaultsBase *)instance; // for testing
 
 - (id)init;
 - (id)initWithUserDefaults:(NSUserDefaults *)userDefaults; // for testing

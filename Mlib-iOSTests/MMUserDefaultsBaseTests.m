@@ -7,31 +7,31 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "MMUserPreferences.h"
+#import "MMUserDefaultsBase.h"
 
-@interface MMUserPreferencesTests : XCTestCase {
-    MMUserPreferences *_oldSharedPrefs;
+@interface MMUserDefaultsBaseTests : XCTestCase {
+    MMUserDefaultsBase *_oldSharedPrefs;
 }
 
 @end
 
-@implementation MMUserPreferencesTests
+@implementation MMUserDefaultsBaseTests
 
 - (void)setUp
 {
     [super setUp];
-    _oldSharedPrefs = [MMUserPreferences sharedPreferences];
+    _oldSharedPrefs = [MMUserDefaultsBase sharedPreferences];
 }
 
 - (void)tearDown
 {
-    [MMUserPreferences setSharedPreferences:_oldSharedPrefs];
+    [MMUserDefaultsBase setSharedPreferences:_oldSharedPrefs];
     [super tearDown];
 }
 
 - (void)testDefaultSharedPreferences
 {
-    MMUserPreferences *SUT = [MMUserPreferences sharedPreferences];
+    MMUserDefaultsBase *SUT = [MMUserDefaultsBase sharedPreferences];
     XCTAssertNotNil(SUT);
 
     id defaults = [SUT performSelector:@selector(userDefaults)];
