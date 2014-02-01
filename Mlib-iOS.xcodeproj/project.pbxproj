@@ -30,6 +30,9 @@
 		27B1B06C17510B0D00D7913E /* NSArray+Mlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B1B06B17510B0D00D7913E /* NSArray+Mlib.m */; };
 		27B1B06F17510B7000D7913E /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B1B06E17510B7000D7913E /* NSArrayTests.m */; };
 		27B492A71789C3430014D51D /* UIStoryboardSegue+MMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B492A61789C3430014D51D /* UIStoryboardSegue+MMNavigationController.m */; };
+		27F31972189D353400A20D7B /* MMDiagnosticsHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F31971189D353400A20D7B /* MMDiagnosticsHelpers.m */; };
+		27F31975189D359C00A20D7B /* NSDictionary+Mlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F31974189D359C00A20D7B /* NSDictionary+Mlib.m */; };
+		27F31977189D360200A20D7B /* MMDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F31976189D360200A20D7B /* MMDictionaryTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,11 @@
 		27B1B06E17510B7000D7913E /* NSArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTests.m; sourceTree = "<group>"; };
 		27B492A51789C3430014D51D /* UIStoryboardSegue+MMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboardSegue+MMNavigationController.h"; sourceTree = "<group>"; };
 		27B492A61789C3430014D51D /* UIStoryboardSegue+MMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboardSegue+MMNavigationController.m"; sourceTree = "<group>"; };
+		27F31970189D353400A20D7B /* MMDiagnosticsHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDiagnosticsHelpers.h; sourceTree = "<group>"; };
+		27F31971189D353400A20D7B /* MMDiagnosticsHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDiagnosticsHelpers.m; sourceTree = "<group>"; };
+		27F31973189D359C00A20D7B /* NSDictionary+Mlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Mlib.h"; sourceTree = "<group>"; };
+		27F31974189D359C00A20D7B /* NSDictionary+Mlib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Mlib.m"; sourceTree = "<group>"; };
+		27F31976189D360200A20D7B /* MMDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDictionaryTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +183,7 @@
 		27462409163785A000180568 /* Mlib-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				27F31976189D360200A20D7B /* MMDictionaryTests.m */,
 				2746241E1637874200180568 /* MMIsEmptyTests.h */,
 				2746241F1637874200180568 /* MMIsEmptyTests.m */,
 				27B0DE1F189B4983009CBF85 /* MMUserDefaultsBaseTests.m */,
@@ -207,6 +216,8 @@
 				27B1B06B17510B0D00D7913E /* NSArray+Mlib.m */,
 				2725CA4F172E25C4005AF3EB /* NSDecimalNumber+Mlib.h */,
 				2725CA50172E25C4005AF3EB /* NSDecimalNumber+Mlib.m */,
+				27F31973189D359C00A20D7B /* NSDictionary+Mlib.h */,
+				27F31974189D359C00A20D7B /* NSDictionary+Mlib.m */,
 				2725CA51172E25C4005AF3EB /* NSString+Mlib.h */,
 				2725CA52172E25C4005AF3EB /* NSString+Mlib.m */,
 			);
@@ -216,6 +227,8 @@
 		27B492A31789C3180014D51D /* AppKit */ = {
 			isa = PBXGroup;
 			children = (
+				27F31970189D353400A20D7B /* MMDiagnosticsHelpers.h */,
+				27F31971189D353400A20D7B /* MMDiagnosticsHelpers.m */,
 				27B0DE1C189B4899009CBF85 /* MMUserDefaultsBase.h */,
 				27B0DE1D189B4899009CBF85 /* MMUserDefaultsBase.m */,
 				27AD59A81682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.h */,
@@ -345,10 +358,12 @@
 				27AD59A21682C65600E04FB7 /* UIDevice+Hardware.m in Sources */,
 				27AD59AA1682CADA00E04FB7 /* NSBundle+StandardInfoDictKeys.m in Sources */,
 				27961353170BC037004FB60D /* UIView+Mlib.m in Sources */,
+				27F31972189D353400A20D7B /* MMDiagnosticsHelpers.m in Sources */,
 				2725CA53172E25C4005AF3EB /* NSDecimalNumber+Mlib.m in Sources */,
 				27B0DE1E189B4899009CBF85 /* MMUserDefaultsBase.m in Sources */,
 				2725CA54172E25C4005AF3EB /* NSString+Mlib.m in Sources */,
 				27B1B06C17510B0D00D7913E /* NSArray+Mlib.m in Sources */,
+				27F31975189D359C00A20D7B /* NSDictionary+Mlib.m in Sources */,
 				27B492A71789C3430014D51D /* UIStoryboardSegue+MMNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +375,7 @@
 				274624201637874200180568 /* MMIsEmptyTests.m in Sources */,
 				2725CA59172E25D3005AF3EB /* NSDecimalNumberTests.m in Sources */,
 				2725CA5A172E25D3005AF3EB /* NSStringTests.m in Sources */,
+				27F31977189D360200A20D7B /* MMDictionaryTests.m in Sources */,
 				27B0DE20189B4983009CBF85 /* MMUserDefaultsBaseTests.m in Sources */,
 				27B1B06F17510B7000D7913E /* NSArrayTests.m in Sources */,
 			);
