@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Mlib-iOS"
-  s.version      = "0.2.1"
+  s.version      = "0.2.2"
   s.source       = { :git => "https://github.com/mmertsock/Mlib-ios.git", :tag => "v#{s.version}" }
   s.summary      = "Basic utility code for iOS projects."
   s.homepage     = "https://github.com/mmertsock/Mlib-iOS"
