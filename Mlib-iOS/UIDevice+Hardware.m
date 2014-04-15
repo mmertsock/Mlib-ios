@@ -10,6 +10,8 @@
 #import "UIDevice+Hardware.h"
 #include <sys/sysctl.h>
 
+NSString* getSystemInfoForIdentifier(char * typeSpecifier);
+
 NSString* getSystemInfoForIdentifier(char * typeSpecifier)
 {
     size_t size;

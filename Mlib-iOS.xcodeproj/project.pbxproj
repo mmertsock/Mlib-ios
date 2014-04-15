@@ -84,6 +84,7 @@
 		2746241F1637874200180568 /* MMIsEmptyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMIsEmptyTests.m; sourceTree = "<group>"; };
 		277FBBD216799C5300643B4A /* NSURL+StandardDirectories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+StandardDirectories.h"; sourceTree = "<group>"; };
 		277FBBD316799C5300643B4A /* NSURL+StandardDirectories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+StandardDirectories.m"; sourceTree = "<group>"; };
+		27844CA018FD5C1C00D59163 /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		27961351170BC037004FB60D /* UIView+Mlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Mlib.h"; sourceTree = "<group>"; };
 		27961352170BC037004FB60D /* UIView+Mlib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Mlib.m"; sourceTree = "<group>"; };
 		27AD59A01682C65600E04FB7 /* UIDevice+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
@@ -137,6 +138,7 @@
 				27462409163785A000180568 /* Mlib-iOSTests */,
 				274623F11637859F00180568 /* Frameworks */,
 				274623F01637859F00180568 /* Products */,
+				27844CA018FD5C1C00D59163 /* Shared.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -405,6 +407,7 @@
 /* Begin XCBuildConfiguration section */
 		27462412163785A000180568 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27844CA018FD5C1C00D59163 /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -432,6 +435,7 @@
 		};
 		27462413163785A000180568 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27844CA018FD5C1C00D59163 /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
