@@ -50,7 +50,9 @@ static const CGFloat SCOPE_HEIGHT = 44.0f;
 - (void)setSegmentedControlTitles:(NSArray *)titles
 {
     UISegmentedControl *seg = [[UISegmentedControl alloc] initWithItems:titles];
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < 70000
     seg.segmentedControlStyle = UISegmentedControlStyleBar;
+#endif
     self.segmentedControl = seg;
 }
 
