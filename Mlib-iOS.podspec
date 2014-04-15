@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary      = "Basic utility code for iOS projects."
   s.homepage     = "https://github.com/mmertsock/Mlib-iOS"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
-  s.author       = "mmertsock"
+  s.author       = 'mmertsock'
   s.source_files = 'Mlib-iOS'
   s.requires_arc = true
   s.platform     = :ios
